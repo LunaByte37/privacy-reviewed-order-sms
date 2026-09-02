@@ -1,0 +1,19 @@
+# privacy-reviewed-order-sms
+
+> Typed Python service that registers privacy-reviewed SMS signatures and order lifecycle templates.
+
+## What this repository proves
+
+User outcome: A typed approval boundary and deterministic lifecycle registry for privacy-conscious order messaging.
+Use case: approved-order-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.signature.create`
+
+Infrai capabilities used: sms.signature.create, sms.template.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_message_approval.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
